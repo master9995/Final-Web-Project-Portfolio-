@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammed Ashraf Portfolio</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            background-color: #1f1f1f;
+            padding: 20px;
+            border-bottom: 2px solid #333;
+        }
+
+        nav a {
+            color: #0088ff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .hero {
+            padding: 50px 20px;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #0088ff;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .job-title {
+            color: #aaa;
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        .about-section {
+            padding: 40px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .skills {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 40px;
+        }
+
+        .skill-box {
+            background-color: #1f1f1f;
+            padding: 20px;
+            width: 200px;
+            border: 1px solid #444;
+            border-radius: 10px;
+        }
+
+        .contact-form {
+            background-color: #1f1f1f;
+            max-width: 500px;
+            margin: 40px auto;
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        input,
+        textarea {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #333;
+            border: 1px solid #555;
+            color: white;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #0088ff;
+            color: white;
+            padding: 10px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #0055aa;
+        }
+
+        footer {
+            padding: 20px;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <img src="C:\Users\PC\OneDrive\Pictures\Screenshots\Screenshot 2026-04-21 224621.png" class="profile-img">
+        <h1>Mohammed Ashraf</h1>
+        <p class="job-title">Full Stack Developer</p>
+        <p>Student at Badr University in Assiut (BUA)</p>
+    </section>
+
+    <section id="about" class="about-section">
+        <h2>About Me</h2>
+        <p>I am a computer science student at Badr University in Assiut, passionate about building modern web applications. I study both frontend and backend technologies to create seamless user experiences and robust software solutions.</p>
+    </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills">
+            <div class="skill-box">
+                <h3>Frontend</h3>
+                <p>HTML, CSS, JavaScript</p>
+            </div>
+            <div class="skill-box">
+                <h3>Backend</h3>
+                <p>Node.js, Databases</p>
+            </div>
+            <div class="skill-box">
+                <h3>Tools</h3>
+                <p>Git, GitHub</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-form">
+            <h2>Contact Me</h2>
+            <form id="myContactForm">
+                <input type="text" placeholder="Your Name" id="userName" required>
+                <input type="email" placeholder="Your Email" id="userEmail" required>
+                <textarea placeholder="Your Message" rows="5" id="userMsg" required></textarea>
+                <br>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>Created by Mohammed Ashraf - BUA Student</p>
+    </footer>
+
+    <script>
+        const form = document.getElementById('myContactForm');
+
+        form.onsubmit = function (event) {
+            event.preventDefault();
+            const name = document.getElementById('userName').value;
+            alert("Hello " + name + "! Your message was sent successfully.");
+            form.reset();
+        };
+    </script>
+
+</body>
+
+</html>
