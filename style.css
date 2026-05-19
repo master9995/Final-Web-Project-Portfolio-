@@ -1,0 +1,107 @@
+body {
+    background-color: #121212;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-bottom: 2px solid #333;
+}
+
+nav a {
+    color: #0088ff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.hero {
+    padding: 50px 20px;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #0088ff;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.job-title {
+    color: #aaa;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.about-section {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px;
+}
+
+.skill-box {
+    background-color: #1f1f1f;
+    padding: 20px;
+    width: 200px;
+    border: 1px solid #444;
+    border-radius: 10px;
+}
+
+.contact-form {
+    background-color: #1f1f1f;
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+input,
+textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #333;
+    border: 1px solid #555;
+    color: white;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #0088ff;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0055aa;
+}
+
+footer {
+    padding: 20px;
+    font-size: 14px;
+    color: #777;
+}
