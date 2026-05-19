@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammed Ashraf Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <img src="profile.png" class="profile-img" alt="Mohammed Ashraf">
+        <h1>Mohammed Ashraf</h1>
+        <p class="job-title">Full Stack Developer</p>
+        <p>Student at Badr University in Assiut (BUA)</p>
+    </section>
+
+    <section id="about" class="about-section">
+        <h2>About Me</h2>
+        <p>I am a computer science student at Badr University in Assiut, passionate about building modern web applications. I study both frontend and backend technologies to create seamless user experiences and robust software solutions.</p>
+    </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills">
+            <div class="skill-box">
+                <h3>Frontend</h3>
+                <p>HTML, CSS, JavaScript</p>
+            </div>
+            <div class="skill-box">
+                <h3>Backend</h3>
+                <p>Node.js, Databases</p>
+            </div>
+            <div class="skill-box">
+                <h3>Tools</h3>
+                <p>Git, GitHub</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-form">
+            <h2>Contact Me</h2>
+            <form id="myContactForm">
+                <input type="text" placeholder="Your Name" id="userName" required>
+                <input type="email" placeholder="Your Email" id="userEmail" required>
+                <textarea placeholder="Your Message" rows="5" id="userMsg" required></textarea>
+                <br>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>Created by Mohammed Ashraf - BUA Student</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
